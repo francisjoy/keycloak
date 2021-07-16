@@ -1,0 +1,33 @@
+app:
+    name: keycloak
+    code: keycloak
+    notify: appzdev@cloudbourne.co
+
+build:
+    version: 13.0
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: keycloak-13.0
+
+deploy:
+    context: alpha/DEV
+    replicas: 1
+    port:
+    - 8080
+  
+properties:
+    KEYCLOAK_USER: admin
+    KEYCLOAK_PASSWORD:
+      vault: KEYCLOAK_PASSWORD
+    DB_VENDOR: postgres
+    DB_ADDR: postgres13-master-13-x
+    DB_DATABASE: keycloak
+    DB_USER: keycloak
+    DB_SCHEMA: public
+    DB_PASSWORD:
+      vault: POSTGRESQL_KEYCLOAK_PASSWORD
+    KEYCLOAK_LOGLEVEL: DEBUG
+    ROOT_LOGLEVEL: DEBUG
+    PROXY_ADDRESS_FORWARDING: true
+    revision : 29
