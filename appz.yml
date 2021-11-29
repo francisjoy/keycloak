@@ -11,7 +11,7 @@ build:
     image_template: keycloak-13.0
 
 deploy:
-    context: alpha/DEV
+    context: francisjoy/DEV
     replicas: 1
     port:
     - 8080
@@ -26,7 +26,7 @@ properties:
     DB_USER: keycloak
     DB_SCHEMA: public
     DB_PASSWORD:
-      vault: POSTGRESQL_KEYCLOAK_PASSWORD
+      vault: KEYCLOAKDB_PASSWORD
     KEYCLOAK_LOGLEVEL: DEBUG
     ROOT_LOGLEVEL: DEBUG
     PROXY_ADDRESS_FORWARDING: true
