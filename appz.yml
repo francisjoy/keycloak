@@ -25,8 +25,8 @@ properties:
     DB_DATABASE: keycloak
     DB_USER: keycloak
     DB_SCHEMA: public
-    KEYCLOAKDB_PASSWORD:
-      vault: KEYCLOAKDB_PASSWORD
+    DB_PASSWORD:
+      vault: DB_PASSWORD
     KEYCLOAK_LOGLEVEL: DEBUG
     ROOT_LOGLEVEL: DEBUG
     PROXY_ADDRESS_FORWARDING: true
