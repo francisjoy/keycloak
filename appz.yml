@@ -30,4 +30,4 @@ properties:
     KEYCLOAK_LOGLEVEL: DEBUG
     ROOT_LOGLEVEL: DEBUG
     PROXY_ADDRESS_FORWARDING: true
-    revision : 30
+    revision : 31
