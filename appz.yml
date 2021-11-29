@@ -25,7 +25,7 @@ properties:
     DB_DATABASE: keycloak
     DB_USER: keycloak
     DB_SCHEMA: public
-    DB_PASSWORD:
+    KEYCLOAKDB_PASSWORD:
       vault: KEYCLOAKDB_PASSWORD
     KEYCLOAK_LOGLEVEL: DEBUG
     ROOT_LOGLEVEL: DEBUG
