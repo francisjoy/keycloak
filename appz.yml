@@ -36,5 +36,6 @@ properties:
     CACHE_OWNERS_COUNT: "2"
     CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"
     PROXY_ADDRESS_FORWARDING: "true"
+    KEYCLOAK_FRONTEND_URL: "https://francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/"
     
     revision : 32
