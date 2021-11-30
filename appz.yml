@@ -32,10 +32,12 @@ properties:
     PROXY_ADDRESS_FORWARDING: true
     
     JGROUPS_DISCOVERY_PROTOCOL: dns.DNS_PING
-    JGROUPS_DISCOVERY_PROPERTIES: dns_query=keycloak-svc
-    CACHE_OWNERS_COUNT: "2"
-    CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"
+    #JGROUPS_DISCOVERY_PROPERTIES: dns_query=keycloak-svc
+    #CACHE_OWNERS_COUNT: "2"
+    #CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"
     PROXY_ADDRESS_FORWARDING: "true"
-    KEYCLOAK_FRONTEND_URL: "https://francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/"
+    ingress:
+    annotations:
+      ingress.kubernetes.io/affinity: cookie
     
     revision : 32
