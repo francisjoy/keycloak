@@ -36,7 +36,7 @@ properties:
     #KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/
 
 
-    JGROUPS_DISCOVERY_PROTOCOL: kubernetes.KUBE_PING
+    #JGROUPS_DISCOVERY_PROTOCOL: kubernetes.KUBE_PING
     #JGROUPS_DISCOVERY_PROPERTIES: dns_query=keycloak-svc
     #CACHE_OWNERS_COUNT: "2"
     #CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"
