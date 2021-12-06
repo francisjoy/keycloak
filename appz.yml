@@ -33,7 +33,7 @@ properties:
     
     #KEYCLOAK_HTTP_PORT: "80"
     #KEYCLOAK_HTTPS_PORT: "443" 
-    KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/
+    KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
     CACHE_OWNERS_COUNT: "2"
     CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"    
 
