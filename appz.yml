@@ -12,7 +12,7 @@ build:
 
 deploy:
     context: francisjoy/DEV
-    replicas: 1
+    replicas: 2
     port:
     - 8080
   
@@ -33,7 +33,7 @@ properties:
     
     #KEYCLOAK_HTTP_PORT: "80"
     #KEYCLOAK_HTTPS_PORT: "443" 
-    #KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/
+    KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/
 
 
     JGROUPS_DISCOVERY_PROTOCOL: kubernetes.KUBE_PING
