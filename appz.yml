@@ -34,14 +34,13 @@ properties:
     #KEYCLOAK_HTTP_PORT: "80"
     #KEYCLOAK_HTTPS_PORT: "443" 
     #KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
-    #KEYCLOAK_FRONTEND_URL: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
-    CACHE_OWNERS_COUNT: "2"
-    CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"    
+    #KEYCLOAK_FRONTEND_URL: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth  
 
     JGROUPS_DISCOVERY_PROTOCOL: dns.DNS_PING
-    JGROUPS_DISCOVERY_PROPERTIES: 'dns_query={{ include "keycloak-svc" . }}'
-    CACHE_OWNERS_COUNT: "2"
-    CACHE_OWNERS_AUTH_SESSIONS_COUNT: "2"
+    JGROUPS_DISCOVERY_PROPERTIES: 'dns_query=${keycloak-svc}.${namespace}.svc.cluster.local'
+    CACHE_OWNERS_COUNT: 3
+    CACHE_OWNERS_AUTH_SESSIONS_COUNT: 3
+    CACHE_OWNERS_AUTH_SESSIONS: 3
     #PROXY_ADDRESS_FORWARDING: "true"
     #ingress:
      #   annotations:
