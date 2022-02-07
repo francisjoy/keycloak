@@ -1,7 +1,7 @@
 app:
     name: keycloak
     code: keycloak
-    notify: appzdev@cloudbourne.co
+    notify: fjoy@ecloudcontrol.com
 
 build:
     version: 13.0
@@ -13,8 +13,7 @@ build:
 deploy:
     context: francisjoy/DEV
     replicas: 2
-    port:
-    - 8080
+    port: none
   
 properties:
     KEYCLOAK_USER: admin
@@ -36,7 +35,7 @@ properties:
     #KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
     #KEYCLOAK_FRONTEND_URL: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth  
 
-    JGROUPS_DISCOVERY_PROTOCOL: dns.DNS_PING
+    JGROUPS_DISCOVERY_PROTOCOL: kubernetes.KUBE_PING
     JGROUPS_DISCOVERY_PROPERTIES: 'dns_query=${keycloak-svc}.${namespace}.svc.cluster.local'
     CACHE_OWNERS_COUNT: 3
     CACHE_OWNERS_AUTH_SESSIONS_COUNT: 3
