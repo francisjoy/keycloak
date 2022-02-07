@@ -45,4 +45,4 @@ properties:
      #   annotations:
      #       ingress.kubernetes.io/affinity: cookie
     
-    revision : 32
+    revision : 33
