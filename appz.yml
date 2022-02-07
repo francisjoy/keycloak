@@ -32,8 +32,8 @@ properties:
     
     #KEYCLOAK_HTTP_PORT: "80"
     #KEYCLOAK_HTTPS_PORT: "443" 
-    #KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
-    #KEYCLOAK_FRONTEND_URL: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth  
+    KEYCLOAK_HOSTNAME: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth
+    KEYCLOAK_FRONTEND_URL: francisjoy-dev-keycloak-13-0.038c839d.lowtouch.cloud/auth  
 
     JGROUPS_DISCOVERY_PROTOCOL: kubernetes.KUBE_PING
     JGROUPS_DISCOVERY_PROPERTIES: 'dns_query=${keycloak-svc}.${namespace}.svc.cluster.local'
